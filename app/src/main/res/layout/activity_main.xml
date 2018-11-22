@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <Button
+    android:id="@+id/btnRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="Refresh" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Computer Name:"
+      android:textSize="18sp" />
+
+    <EditText
+      android:id="@+id/txtComputerName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:textSize="18sp" />
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="Device Status"
+    android:textAlignment="center"
+    android:textSize="18sp" />
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Conected Controller IDs:"
+        android:textSize="14sp" />
+
+      <TextView
+        android:id="@+id/lblControllerIDs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Unknown"
+        android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Status of Controller:"
+        android:textSize="14sp" />
+
+      <TextView
+        android:id="@+id/lblControllerStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Unknown"
+        android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Status of Computer:"
+        android:textSize="14sp" />
+
+      <TextView
+        android:id="@+id/lblComputerStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Unknown"
+        android:textSize="14sp" />
+    </TableRow>
+
+  </TableLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="8dp"
+    android:text="Button Status"
+    android:textAlignment="center"
+    android:textSize="18sp" />
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Letter Button"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:id="@+id/lblLetterButtonA"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="A"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblLetterButtonB"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="B"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblLetterButtonX"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="X"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblLetterButtonY"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="Y"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+      </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="D-Pad Button"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/lblDpadButtonUp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="Up"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblDpadButtonDown"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="Down"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblDpadButtonLeft"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="Left"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblDpadButtonRight"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".25"
+          android:text="Right"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+      </LinearLayout>
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Shoulder Triggers"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:id="@+id/lblShoulderTriggerLeft"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="Left"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblShoulderTriggerRight"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="Right"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+      </LinearLayout>
+    </TableRow>
+  </TableLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="8dp"
+    android:text="Analog Status"
+    android:textAlignment="center"
+    android:textSize="18sp" />
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Joystick Legend"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="Vertical"
+          android:textAlignment="center"
+          android:textSize="14sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="Horizontal"
+          android:textAlignment="center"
+          android:textSize="14sp"
+          android:textStyle="bold" />
+      </LinearLayout>
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Left Joystick"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:id="@+id/lblLeftJoystickVertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="0.00"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblLeftJoystickHorizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="0.00"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+      </LinearLayout>
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Right Joystick"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:id="@+id/lblRightJoystickVertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+
+          android:text="0.00"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblRightJoystickHorizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="0.00"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+      </LinearLayout>
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Shoulder Brake Legend"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="Left"
+          android:textAlignment="center"
+          android:textSize="14sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="Right"
+          android:textAlignment="center"
+          android:textSize="14sp"
+          android:textStyle="bold" />
+      </LinearLayout>
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="1">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Shoulder Brakes"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+          android:id="@+id/lblShoulderBrakesLeft"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="0.00"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/lblShoulderBrakesRight"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight=".5"
+          android:text="0.00"
+          android:textAlignment="center"
+          android:textSize="14sp" />
+      </LinearLayout>
+    </TableRow>
+  </TableLayout>
+</LinearLayout>
